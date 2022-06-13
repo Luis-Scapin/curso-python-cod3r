@@ -24,9 +24,9 @@ class TerminalColor:
 
 
 def obter_conceito(nota):
-    ''' Obter o conceito baseado na nota dp aluno. '''
+    ''' Obter o conceito baseado na nota do aluno. '''
 
-    if nota > 10 or nota < 0:
+    if 0 > nota > 10:
         return None
     elif nota > 9:
         return "A"
