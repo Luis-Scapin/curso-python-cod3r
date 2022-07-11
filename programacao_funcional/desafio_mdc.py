@@ -1,6 +1,10 @@
 #! python
 def mdc(numeros):
-    pass
+    def calc(divisor):
+        return divisor if sum(map(lambda x: x % divisor, numeros)) == 0 \
+            else calc(divisor - 1)
+
+    return calc(min(numeros))
 
 
 if __name__ == '__main__':
