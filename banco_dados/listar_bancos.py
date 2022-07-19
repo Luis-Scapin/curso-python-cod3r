@@ -12,4 +12,4 @@ cursor = conexao.cursor()
 cursor.execute('SHOW DATABASES')
 
 for i, database in enumerate(cursor, start=1):
-    print(f'Bando de Dados {i}: {database[0].decode()}')
+    print(f'Bando de Dados {i}: {database[0]}')

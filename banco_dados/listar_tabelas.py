@@ -8,6 +8,6 @@ with nova_conexao() as conexao:
         cursor.execute('SHOW TABLES')
 
         for i, table in enumerate(cursor, start=1):
-            print(f'Tabela {i}: {table[0].decode()}')
+            print(f'Tabela {i}: {table[0]}')
     except ProgrammingError as e:
         print(f'Erro: {e.msg}')
